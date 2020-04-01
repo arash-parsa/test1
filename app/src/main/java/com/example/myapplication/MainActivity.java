@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         Button saveInformationButton = findViewById(R.id.btn_main_saveInformation);
         saveInformationButton.setOnClickListener(new View.OnClickListener() {
             @Override
