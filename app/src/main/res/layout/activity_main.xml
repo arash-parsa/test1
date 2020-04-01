@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray100"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_main_toolbarTitle"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/white"
+        android:elevation="10dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:text="@string/app_name"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:fontFamily="sans-serif-condensed-medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_main_saveInformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="@string/save_information"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_main_saveInformation"
+        android:layout_below="@id/tv_main_toolbarTitle">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/checkBox_main_deepLearning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/deep_learning"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox_main_ui" />
+
+            <CheckBox
+                android:id="@+id/checkBox_main_ui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ui_design"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox_main_android" />
+
+            <Button
+                android:id="@+id/btn_main_editProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/background_button_primary"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/btn_edit_profile"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toStartOf="@+id/btn_main_viewWebsite"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_main_fullName" />
+
+            <Button
+                android:id="@+id/btn_main_viewWebsite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/background_button_secondary"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/view_website"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/btn_main_editProfile"
+                app:layout_constraintTop_toTopOf="@+id/btn_main_editProfile" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/download" />
+
+            <TextView
+                android:id="@+id/tv_main_fullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:textColor="@android:color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView"
+                tools:text="Arash Parsa" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/skills"
+                android:textColor="@color/gray600"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/btn_main_editProfile" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="20dp" />
+
+            <CheckBox
+                android:id="@+id/checkBox_main_android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/android_develpment"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/province_city"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox_main_deepLearning" />
+
+
+
+
+
+            <RadioGroup
+                android:id="@+id/radiogroup_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" >
+
+                <RadioButton
+                    android:id="@+id/radioButton_main_tehran"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/tehran_tehran" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_main_gilan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gilan_rasht" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_main_alborz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/alborz_karaj" />
+            </RadioGroup>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

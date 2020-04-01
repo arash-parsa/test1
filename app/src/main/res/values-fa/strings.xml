@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ویوهای اندروید</string>
+    <string name="alborz_karaj">البرز،کرج</string>
+    <string name="android_develpment">توسعه اندروید</string>
+    <string name="btn_edit_profile">ویرایش پروفایل</string>
+    <string name="deep_learning">یادگیری ماشین</string>
+    <string name="gilan_rasht">گیلان،رشت</string>
+    <string name="province_city">استان،شهر</string>
+    <string name="save_information">ذخیره اطلاعات</string>
+    <string name="skills">مهارت ها</string>
+    <string name="tehran_tehran">تهران،تهران</string>
+    <string name="ui_design">ساخت رابط کاربری</string>
+    <string name="view_website">مشاهده وب سایت</string>
+    <string name="editProfile_hint">نام و نام خانوادگی خود را اینجا وارد نمایید...</string>
+    <string name="done">ویرایش</string>
+</resources>

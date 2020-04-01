@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Android Simple Views</string>
+    <string name="view_website">View Website</string>
+    <string name="skills">skills</string>
+    <string name="android_develpment">Android Development</string>
+    <string name="ui_design">Ui Design</string>
+    <string name="deep_learning">Deep Learning</string>
+    <string name="gilan_rasht">Gilan,Rasht</string>
+    <string name="tehran_tehran">Tehran,Tehran</string>
+    <string name="alborz_karaj">Alborz,karaj</string>
+    <string name="province_city">Province_city</string>
+    <string name="save_information">Save Information</string>
+    <string name="btn_edit_profile">Edit Profile</string>
+    <string name="editProfile_hint">"Enter Your Full Name"</string>
+    <string name="done">done</string>
+
+
+</resources>
